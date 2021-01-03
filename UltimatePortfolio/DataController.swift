@@ -50,7 +50,7 @@ class DataController: ObservableObject {
             for j in 1...10 {
                 let item = Item(context: viewContext)
                 item.title = "Item \(j)"
-                item.creationData = Date()
+                item.creationDate = Date()
                 item.completed = Bool.random()
                 item.project = project
                 item.priority = Int16.random(in: 1...3)
