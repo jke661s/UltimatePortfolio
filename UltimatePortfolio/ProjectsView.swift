@@ -31,35 +31,42 @@ struct ProjectsView: View {
     #warning("The order doesn't change after adding or editing a project")
     var body: some View {
         NavigationView {
-            List {
-                ForEach(projects.wrappedValue) { project in
-                    Section(header: ProjectHeaderView(project: project)) {
-                        ForEach(project.projectItems(using: sortOrder)) { item in
-                            ItemRowView(item: item)
-                        }
-                        .onDelete { indexSet in
-                            let allItems = project.projectItems
-                            for index in indexSet {
-                                let item = allItems[index]
-                                dataController.delete(item)
-                            }
-                            dataController.save()
-                        }
-                        
-                        if showClosedProjects == false {
-                            Button {
-                                let item = Item(context: managedObjectContext)
-                                item.project = project
-                                item.creationDate = Date()
-                                dataController.save()
-                            } label: {
-                                Label("Add New Item", systemImage: "plus")
+            Group {
+                if projects.wrappedValue.isEmpty {
+                    Text("There is nothing here right now")
+                        .foregroundColor(.secondary)
+                } else {
+                    List {
+                        ForEach(projects.wrappedValue) { project in
+                            Section(header: ProjectHeaderView(project: project)) {
+                                ForEach(project.projectItems(using: sortOrder)) { item in
+                                    ItemRowView(project: project, item: item)
+                                }
+                                .onDelete { indexSet in
+                                    let allItems = project.projectItems(using: sortOrder)
+                                    for index in indexSet {
+                                        let item = allItems[index]
+                                        dataController.delete(item)
+                                    }
+                                    dataController.save()
+                                }
+                                
+                                if showClosedProjects == false {
+                                    Button {
+                                        let item = Item(context: managedObjectContext)
+                                        item.project = project
+                                        item.creationDate = Date()
+                                        dataController.save()
+                                    } label: {
+                                        Label("Add New Item", systemImage: "plus")
+                                    }
+                                }
                             }
                         }
                     }
+                    .listStyle(InsetGroupedListStyle())
                 }
             }
-            .listStyle(InsetGroupedListStyle())
             .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -92,6 +99,8 @@ struct ProjectsView: View {
                     .default(Text("Title")) { sortOrder = .title }
                 ])
             }
+            
+            SelectSomethingView()
         }
     }
 }
