@@ -11,6 +11,9 @@ struct ProjectsView: View {
     static let openTag: String? = "Open"
     static let closedTag: String? = "Closed"
     
+    @EnvironmentObject var dataController: DataController
+    @Environment(\.managedObjectContext) var managedObjectContext
+    
     let showClosedProjects: Bool
     
     let projects: FetchRequest<Project>
@@ -30,11 +33,44 @@ struct ProjectsView: View {
                         ForEach(project.projectItems) { item in
                             ItemRowView(item: item)
                         }
+                        .onDelete { indexSet in
+                            let allItems = project.projectItems
+                            for index in indexSet {
+                                let item = allItems[index]
+                                dataController.delete(item)
+                            }
+                            dataController.save()
+                        }
+                        
+                        if showClosedProjects == false {
+                            Button {
+                                let item = Item(context: managedObjectContext)
+                                item.project = project
+                                item.creationDate = Date()
+                                dataController.save()
+                            } label: {
+                                Label("Add New Item", systemImage: "plus")
+                            }
+                        }
                     }
                 }
             }
             .listStyle(InsetGroupedListStyle())
             .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
+            .toolbar {
+                if showClosedProjects == false {
+                    Button {
+                        withAnimation {
+                            let project = Project(context: managedObjectContext)
+                            project.closed = false
+                            project.creationDate = Date()
+                            dataController.save()
+                        }
+                    } label: {
+                        Label("Add Project", systemImage: "plus")
+                    }
+                }
+            }
         }
     }
 }
