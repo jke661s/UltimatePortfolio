@@ -23,6 +23,7 @@
 		C442AEFB25AC3D99009A1691 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442AEFA25AC3D99009A1691 /* ProjectHeaderView.swift */; };
 		C442AEFE25AC4434009A1691 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C442AEFD25AC4434009A1691 /* Colors.xcassets */; };
 		C442AF0125AC45AD009A1691 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442AF0025AC45AD009A1691 /* EditProjectView.swift */; };
+		C496FA9825ACE71900F652F0 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C496FA9725ACE71900F652F0 /* Sequence-Sorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		C442AEFA25AC3D99009A1691 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		C442AEFD25AC4434009A1691 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		C442AF0025AC45AD009A1691 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		C496FA9725ACE71900F652F0 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				C442AEF725AC2C47009A1691 /* Binding-OnChange.swift */,
 				C411CF7425A22626008BEF18 /* Item-CoreDataHelpers.swift */,
 				C411CF7725A228FE008BEF18 /* Project-CoreDataHelpers.swift */,
+				C496FA9725ACE71900F652F0 /* Sequence-Sorting.swift */,
 				C411CF5625A17285008BEF18 /* ContentView.swift */,
 				C411CF6425A17360008BEF18 /* Main.xcdatamodeld */,
 				C411CF6825A17CB9008BEF18 /* DataController.swift */,
@@ -186,6 +189,7 @@
 				C442AEF525AC0FD4009A1691 /* ItemRowView.swift in Sources */,
 				C411CF5725A17285008BEF18 /* ContentView.swift in Sources */,
 				C442AEF825AC2C47009A1691 /* Binding-OnChange.swift in Sources */,
+				C496FA9825ACE71900F652F0 /* Sequence-Sorting.swift in Sources */,
 				C411CF6F25A1B4F4008BEF18 /* HomeView.swift in Sources */,
 				C411CF5525A17285008BEF18 /* UltimatePortfolioApp.swift in Sources */,
 				C411CF7525A22626008BEF18 /* Item-CoreDataHelpers.swift in Sources */,
