@@ -22,6 +22,7 @@
 		C442AEF825AC2C47009A1691 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442AEF725AC2C47009A1691 /* Binding-OnChange.swift */; };
 		C442AEFB25AC3D99009A1691 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442AEFA25AC3D99009A1691 /* ProjectHeaderView.swift */; };
 		C442AEFE25AC4434009A1691 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C442AEFD25AC4434009A1691 /* Colors.xcassets */; };
+		C442AF0125AC45AD009A1691 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442AF0025AC45AD009A1691 /* EditProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		C442AEF725AC2C47009A1691 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		C442AEFA25AC3D99009A1691 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		C442AEFD25AC4434009A1691 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		C442AF0025AC45AD009A1691 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,12 +77,12 @@
 		C411CF5325A17285008BEF18 /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				C442AF0025AC45AD009A1691 /* EditProjectView.swift */,
 				C411CF6B25A1B2C9008BEF18 /* UltimatePortfolio.entitlements */,
 				C411CF5425A17285008BEF18 /* UltimatePortfolioApp.swift */,
 				C411CF6E25A1B4F4008BEF18 /* HomeView.swift */,
 				C411CF7125A1BF23008BEF18 /* ProjectsView.swift */,
 				C442AEFA25AC3D99009A1691 /* ProjectHeaderView.swift */,
-				C442AEFD25AC4434009A1691 /* Colors.xcassets */,
 				C442AEF425AC0FD4009A1691 /* ItemRowView.swift */,
 				C442AEF125AC03A4009A1691 /* EditItemView.swift */,
 				C442AEF725AC2C47009A1691 /* Binding-OnChange.swift */,
@@ -90,6 +92,7 @@
 				C411CF6425A17360008BEF18 /* Main.xcdatamodeld */,
 				C411CF6825A17CB9008BEF18 /* DataController.swift */,
 				C411CF5825A17286008BEF18 /* Assets.xcassets */,
+				C442AEFD25AC4434009A1691 /* Colors.xcassets */,
 				C411CF5D25A17286008BEF18 /* Info.plist */,
 				C411CF5A25A17286008BEF18 /* Preview Content */,
 			);
@@ -178,6 +181,7 @@
 				C442AEFB25AC3D99009A1691 /* ProjectHeaderView.swift in Sources */,
 				C411CF6625A17360008BEF18 /* Main.xcdatamodeld in Sources */,
 				C411CF7825A228FE008BEF18 /* Project-CoreDataHelpers.swift in Sources */,
+				C442AF0125AC45AD009A1691 /* EditProjectView.swift in Sources */,
 				C411CF6925A17CB9008BEF18 /* DataController.swift in Sources */,
 				C442AEF525AC0FD4009A1691 /* ItemRowView.swift in Sources */,
 				C411CF5725A17285008BEF18 /* ContentView.swift in Sources */,
