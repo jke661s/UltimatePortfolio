@@ -29,7 +29,7 @@ struct EditItemView: View {
     var body: some View {
         Form {
             Section(header: Text("Basic Settings")) {
-                TextField("Item name", text: $title)
+                TextField("Item name", text: $title.onChange(update))
                 TextField("Description", text: $detail)
             }
             
@@ -47,10 +47,15 @@ struct EditItemView: View {
             }
         }
         .navigationTitle("Edit Item")
-        .onDisappear(perform: update)
+//        .onChange(of: title) { _ in update() }
+        .onChange(of: detail) { _ in update() }
+        .onChange(of: priority) { _ in update() }
+        .onChange(of: completed) { _ in update() }
+        .onDisappear(perform: dataController.save)
     }
     
     func update() {
+//        item.project?.objectWillChange.send()
         item.title = title
         item.detail = detail
         item.priority = Int16(priority)
