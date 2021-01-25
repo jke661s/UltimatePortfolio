@@ -17,6 +17,7 @@
 		C411CF7225A1BF23008BEF18 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C411CF7125A1BF23008BEF18 /* ProjectsView.swift */; };
 		C411CF7525A22626008BEF18 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C411CF7425A22626008BEF18 /* Item-CoreDataHelpers.swift */; };
 		C411CF7825A228FE008BEF18 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C411CF7725A228FE008BEF18 /* Project-CoreDataHelpers.swift */; };
+		C4250E6725BECD600027E661 /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4250E6625BECD600027E661 /* Color-Additions.swift */; };
 		C442AEF225AC03A4009A1691 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442AEF125AC03A4009A1691 /* EditItemView.swift */; };
 		C442AEF525AC0FD4009A1691 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442AEF425AC0FD4009A1691 /* ItemRowView.swift */; };
 		C442AEF825AC2C47009A1691 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442AEF725AC2C47009A1691 /* Binding-OnChange.swift */; };
@@ -45,6 +46,7 @@
 		C411CF7125A1BF23008BEF18 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		C411CF7425A22626008BEF18 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		C411CF7725A228FE008BEF18 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		C4250E6625BECD600027E661 /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 		C442AEF125AC03A4009A1691 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		C442AEF425AC0FD4009A1691 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		C442AEF725AC2C47009A1691 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				C4E0B9C225AD6D0A00485E11 /* Awards.json */,
 				C411CF5D25A17286008BEF18 /* Info.plist */,
 				C411CF5A25A17286008BEF18 /* Preview Content */,
+				C4250E6625BECD600027E661 /* Color-Additions.swift */,
 			);
 			path = UltimatePortfolio;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				C4E0B9C925AD6FDF00485E11 /* AwardsView.swift in Sources */,
 				C411CF6625A17360008BEF18 /* Main.xcdatamodeld in Sources */,
 				C411CF7825A228FE008BEF18 /* Project-CoreDataHelpers.swift in Sources */,
+				C4250E6725BECD600027E661 /* Color-Additions.swift in Sources */,
 				C442AF0125AC45AD009A1691 /* EditProjectView.swift in Sources */,
 				C411CF6925A17CB9008BEF18 /* DataController.swift in Sources */,
 				C496FA9B25AD0E8C00F652F0 /* SelectSomethingView.swift in Sources */,
